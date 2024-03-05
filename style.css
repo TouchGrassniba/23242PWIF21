@@ -1,38 +1,61 @@
 body {
-
-    background-image: linear-gradient(to left, #1D2B53, #7E2553, #FF004D, #FAEF5D);
-
+    background-color: #df6ea0;
 }
 
-.opener {
-    text-align: center;
-    background-color: cyan;
-    border-radius: 30px;
+/* css tablet */
+@media screen and (min-width : 600px) {
+    body {
+        background-color: #33294a;
+    }
 
-
-
+    .col-sm-6 {
+        width: 50%;
+        float: left;
+        background-color: aquamarine;
+        border-radius: 30% 30% 30% 30%;
+    }
 }
 
-.col {
-    width: 25%;
-    float: left;
-    text-align: center;
-    background-color: aquamarine;
-    background-image: linear-gradient(to bottom, #070F2B, #FAEF5D);
+/* css desktop */
+@media screen and (min-width : 992px) {
+    body {
+        background-color: #6c234e;
+    }
+
+    .col {
+        width: 25%;
+        background-color: #fdf0d1;
+        float: left;
+    }
+
+  
 }
 
-.col2 {
+/* class selector */
+
+
+.col-3 {
     width: 33.33%;
+    background-color: #9e8ec3;
     float: left;
-    background-color: blueviolet;
-    text-align: center;
-    background-image: linear-gradient(to bottom, #59D5E0, #FAA300);
 }
 
-.card {
+.img-responsive {
     width: 100%;
+    max-height: 200px;
+    border-radius: 30% 50% 30% 50%;
+}
 
+.text-center {
+    text-align: center;
+}
 
+.bg-primary {
+    background-color: #fde0d2;
+}
+
+.rounded {
+    border-radius: 20px;
 }
 
 .mb-5 {
@@ -43,13 +66,8 @@ body {
     margin-top: 150px;
 }
 
-.card::after {
+.row::after {
     content: "";
     clear: both;
     display: table;
-}
-
-.img {
-    width: 300px;
-    border-radius: 50%;
 }
